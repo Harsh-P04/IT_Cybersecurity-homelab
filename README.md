@@ -1,5 +1,21 @@
 # IT Support & Cybersecurity Home Lab
 
+![Windows Server](https://img.shields.io/badge/Windows_Server-2022-blue)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-Server-orange)
+![Wazuh](https://img.shields.io/badge/Wazuh-SIEM-red)
+![Sysmon](https://img.shields.io/badge/Sysmon-Monitoring-green)
+![Active Directory](https://img.shields.io/badge/Active_Directory-Configured-blue)
+
+## Key Achievements
+
+- Built a multi-VM enterprise-style IT and cybersecurity lab using Windows Server 2022, Windows 11, Ubuntu Server, and Kali Linux
+- Configured Active Directory, DNS, Group Policy Objects (GPO), domain joining, shared drive mapping, and remote connectivity
+- Deployed and configured osTicket helpdesk system on Ubuntu Server using Apache and MariaDB
+- Performed network enumeration, vulnerability scanning, and packet analysis using Nmap, OpenVAS, and Wireshark
+- Implemented Sysmon endpoint monitoring for PowerShell activity, process creation, and security event visibility
+- Deployed Wazuh SIEM for centralized logging, endpoint monitoring, threat hunting, and security event investigation
+- Simulated attacker behavior including reconnaissance, failed authentication attempts, persistence activity, and lateral movement detection
+
 ## Lab Architecture
 
 <img width="1000" alt="Lab Architecture" src="screenshots/Architecture/lab-architecture.png">
