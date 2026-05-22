@@ -1,25 +1,21 @@
 # IT Support & Cybersecurity Home Lab
 
-A hands-on enterprise-style IT Support and Cybersecurity home lab built to simulate real-world IT administration, helpdesk operations, endpoint monitoring, vulnerability management, and Security Operations Center (SOC) workflows.
+A hands-on enterprise-style IT Support and Cybersecurity home lab built to simulate real-world IT administration, helpdesk operations, endpoint monitoring, vulnerability management, and SOC (Security Operations Center) workflows.
 
 This project demonstrates practical experience with Windows Server administration, Active Directory, Group Policy, Linux administration, helpdesk systems, vulnerability scanning, endpoint monitoring, SIEM deployment, and threat hunting.
 
 ---
 
-# Lab Architecture
+# Lab Overview
 
-<img width="1000" alt="Lab Architecture" src="screenshots/lab-architecture.png">
-
----
-
-# Lab Environment
+## Lab Environment
 
 | System | Role | IP Address |
 |---------|------|-------------|
 | Windows Server 2022 | Domain Controller / DNS / File Server | 192.168.10.10 |
 | Windows 11 | Domain Joined Client | 192.168.10.20 |
 | Ubuntu Server | osTicket + Wazuh SIEM | 192.168.10.30 |
-| Kali Linux | Security Testing & Enumeration | 192.168.10.40 |
+| Kali Linux | Security Testing | 192.168.10.40 |
 
 ---
 
@@ -31,7 +27,6 @@ This project demonstrates practical experience with Windows Server administratio
 - Windows 11
 - Ubuntu Server
 - Active Directory
-- Group Policy Objects (GPO)
 - DNS
 - SMB File Sharing
 - VirtualBox
@@ -41,22 +36,22 @@ This project demonstrates practical experience with Windows Server administratio
 ## IT Support & Helpdesk
 
 - osTicket
-- Ticket Management
-- User Troubleshooting
+- Ticket Troubleshooting
 - Service Management
+- User Support
 - System Administration
 
 ## Cybersecurity & Monitoring
 
 - Wazuh SIEM
 - Sysmon
-- OpenVAS / Greenbone
+- OpenVAS
 - Wireshark
 - Nmap
 - Kali Linux
-- Windows Event Logging
 - Threat Hunting
 - Security Monitoring
+- Windows Event Logs
 
 ---
 
@@ -64,104 +59,148 @@ This project demonstrates practical experience with Windows Server administratio
 
 ## 1. Network Foundation
 
-Configured enterprise-style virtual infrastructure using VirtualBox with static IP addressing and secure communication between endpoints.
+Configured enterprise-style virtual infrastructure using VirtualBox with networking, remote access, and shared resources.
 
-### Key Skills
+### Skills Demonstrated
 
-- VM deployment
 - Network troubleshooting
-- Static IP configuration
-- Connectivity troubleshooting
+- Remote access
+- Drive mapping
+- Connectivity testing
 - Virtual networking
 
-📂 Folder: `01-network-foundation`
+### Screenshots
+
+#### Lab Setup
+
+<img width="1000" src="screenshots/1-Network/Lab setup.png">
 
 ---
 
 ## 2. Active Directory & Group Policy
 
-Built a Windows domain environment using Windows Server 2022 and configured Group Policy Objects (GPOs) to manage users, shared drives, and workstation settings.
+Built a Windows domain environment using Windows Server 2022 and configured Group Policy Objects (GPOs).
 
-### Key Skills
+### Skills Demonstrated
 
 - Active Directory administration
-- User management
-- OU management
-- Group Policy configuration
-- Domain join
-- Shared drives
+- Domain management
+- Group Policy
+- Drive mapping
+- User administration
 
-📂 Folder: `02-active-directory-gpo`
+### Screenshots
+
+#### Drive Mapping
+
+<img width="1000" src="screenshots/2-Active-directory/Hard Drive mapping.png">
+
+#### Remote Connection
+
+<img width="1000" src="screenshots/2-Active-directory/Remote Connection.png">
+
+#### Week Progress
+
+<img width="1000" src="screenshots/2-Active-directory/Week 2.png">
 
 ---
 
 ## 3. Helpdesk Ticketing System (osTicket)
 
-Deployed and configured osTicket on Ubuntu Server using Apache and MariaDB to simulate enterprise IT support ticket workflows.
+Deployed and configured osTicket on Ubuntu Server to simulate real enterprise IT support ticket workflows.
 
-### Key Skills
+### Skills Demonstrated
 
-- Linux server administration
-- Apache troubleshooting
-- MariaDB configuration
-- Helpdesk operations
-- Ticket lifecycle management
+- Linux Administration
+- Apache Troubleshooting
+- MariaDB Configuration
+- Helpdesk Operations
+- Ticket Resolution
 
-📂 Folder: `03-helpdesk-osticket`
+### Screenshots
+
+<img width="1000" src="screenshots/3-Osticket/Ticket System Install Software.png">
+
+<img width="1000" src="screenshots/3-Osticket/Ticket System Printer not working.png">
+
+<img width="1000" src="screenshots/3-Osticket/Ticket System Drive missing.png">
+
+<img width="1000" src="screenshots/3-Osticket/Ticket System account lockedout.png">
+
+<img width="1000" src="screenshots/3-Osticket/Ticket System Password reset.png">
 
 ---
 
-## 4. Network Security & Vulnerability Analysis
+## 4. Network Security Analysis
 
-Performed host discovery, traffic inspection, and vulnerability assessments using industry-standard security tools.
+Performed vulnerability scanning, traffic analysis, and network enumeration using cybersecurity tools.
 
 ### Tools Used
 
-- OpenVAS / Greenbone
-- Nmap
+- OpenVAS
 - Wireshark
+- Nmap
 
-### Key Skills
+### Skills Demonstrated
 
-- Vulnerability scanning
-- Port scanning
-- Packet analysis
-- Network reconnaissance
-- Security assessment
+- Vulnerability Assessment
+- Packet Analysis
+- Network Enumeration
+- Threat Identification
 
-📂 Folder: `04-network-security-analysis`
+### Screenshots
+
+<img width="1000" src="screenshots/4-Network-security/Nmap network enumeration report.png">
+
+<img width="1000" src="screenshots/4-Network-security/OpenVAS vulnerability scanning.png">
+
+<img width="1000" src="screenshots/4-Network-security/Wireshark DNS Scan.png">
+
+<img width="1000" src="screenshots/4-Network-security/Wireshark SMB Kerberos and LDAP.png">
 
 ---
 
 ## 5. Endpoint Monitoring with Sysmon
 
-Configured Sysmon to collect detailed Windows endpoint telemetry for process creation, PowerShell activity, and suspicious system behavior.
+Configured Sysmon to collect endpoint telemetry for process monitoring, PowerShell analysis, and network visibility.
 
-### Detection Scenarios
+### Skills Demonstrated
 
-- PowerShell monitoring
-- Process creation monitoring
-- Event log analysis
-- Authentication visibility
+- Windows Event Monitoring
+- PowerShell Analysis
+- Network Traffic Analysis
+- Threat Hunting
 
-📂 Folder: `05-soc-monitoring-sysmon`
+### Screenshots
+
+<img width="1000" src="screenshots/5-Sysmon/Sysmon Windows logs.png">
+
+<img width="1000" src="screenshots/5-Sysmon/Sysmon Network Traffic logs.png">
+
+<img width="1000" src="screenshots/5-Sysmon/Sysmon file download investigation.png">
+
+<img width="1000" src="screenshots/5-Sysmon/Sysmon log and powershell analysis report.png">
+
+<img width="1000" src="screenshots/5-Sysmon/Threat hunting and firewall logs.png">
 
 ---
 
-## 6. Wazuh SIEM Deployment
+## 6. Wazuh SIEM Monitoring
 
-Implemented centralized security monitoring using Wazuh SIEM and integrated Windows Server and Windows endpoints for event collection and investigation.
+Implemented centralized monitoring and threat hunting using Wazuh SIEM.
 
-### Capabilities Implemented
+### Skills Demonstrated
 
-- Endpoint onboarding
-- Centralized log monitoring
-- Threat hunting
-- Security event analysis
-- PowerShell monitoring
-- Authentication monitoring
+- SIEM Administration
+- Endpoint Monitoring
+- Threat Hunting
+- Security Event Analysis
 
-📂 Folder: `06-wazuh-siem`
+### Screenshots
+
+<img width="1000" src="screenshots/6-Wazuh/Wazuh SIEM monitoring and threat hunting.png">
+
+<img width="1000" src="screenshots/6-Wazuh/Wazuh threat hunting dashboard snapshot.png">
 
 ---
 
@@ -169,62 +208,46 @@ Implemented centralized security monitoring using Wazuh SIEM and integrated Wind
 
 Simulated attacker behavior and investigated detections using Wazuh SIEM.
 
-### Security Activities
+### Detection Scenarios
 
-- Failed login monitoring
-- PowerShell execution detection
-- Reconnaissance activity detection
-- Endpoint telemetry analysis
-- Threat hunting
+- Reconnaissance Detection
+- Persistence Monitoring
+- Lateral Movement Detection
+- Threat Investigation
 
-### MITRE ATT&CK Concepts
+### Screenshots
 
-- T1059 – Command & Scripting Interpreter
-- T1087 – Account Discovery
-- T1110 – Brute Force
-- T1053 – Scheduled Task
-- T1547 – Registry Run Keys
+<img width="1000" src="screenshots/7-Attack-detection/Wazuh Reconnaissance Detection.png">
 
-📂 Folder: `07-attack-detection`
+<img width="1000" src="screenshots/7-Attack-detection/Wazuh Persistence activity detection.png">
+
+<img width="1000" src="screenshots/7-Attack-detection/Wazuh Lateral movement detection.png">
 
 ---
 
 # Skills Demonstrated
 
-### IT Support
+## IT Support
 
-- Windows Administration
 - Active Directory
 - Group Policy
 - Helpdesk Troubleshooting
 - Ticket Management
-- Endpoint Support
+- Windows Administration
+- Linux Administration
 - DNS Troubleshooting
 - SMB File Sharing
-- Linux Administration
 
-### Cybersecurity
+## Cybersecurity
 
 - SIEM Monitoring
 - Threat Hunting
 - Sysmon Monitoring
-- Windows Event Analysis
 - Vulnerability Management
-- Security Monitoring
+- Security Event Analysis
 - Incident Investigation
-- PowerShell Analysis
+- PowerShell Monitoring
 - Endpoint Security
-
----
-
-# Future Enhancements
-
-- Automated alerting
-- Detection engineering
-- Sigma rules
-- Custom Wazuh decoders
-- Malware analysis
-- Security orchestration
 
 ---
 
