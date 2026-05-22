@@ -1,5 +1,9 @@
 # IT Support & Cybersecurity Home Lab
 
+## Lab Architecture
+
+<img width="1000" alt="Lab Architecture" src="screenshots/Architecture/lab-architecture.png">
+
 A hands-on enterprise-style IT Support and Cybersecurity home lab built to simulate real-world IT administration, helpdesk operations, endpoint monitoring, vulnerability management, and SOC (Security Operations Center) workflows.
 
 This project demonstrates practical experience with Windows Server administration, Active Directory, Group Policy, Linux administration, helpdesk systems, vulnerability scanning, endpoint monitoring, SIEM deployment, and threat hunting.
